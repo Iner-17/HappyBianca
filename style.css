@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Peralta&family=Poppins:wght@300;400&family=Roboto:wght@500&family=Rubik+Doodle+Shadow&display=swap');
+
+@font-face {
+    font-family: myFont;
+    src: url(font/val.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background-color: #fd4444;
+}
+
+.card {
+    position: relative;
+    width: 70%;
+}
+
+.card img {
+    margin: 0 auto;
+    width: 100%; 
+}
+
+
+.card-message {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.card-message h2 {
+    font-family: 'Rubik Doodle Shadow', system-ui;
+    text-align: center;
+    margin-top: 5vh;
+    font-size: 5rem;
+    padding: 0 10%;
+}
+
+.card-message p {
+    font-family: 'Rubik Doodle Shadow', system-ui;
+    text-align: center;
+    margin-top: 5vh;
+    font-size: 2rem;
+    padding: 0 10%;
+    color: #fd4444;
+}
+
+.card-message img {
+    display: block;
+    margin: 0 auto;
+}
+.card-message button {
+    margin-top: -50px;
+    font-size: 1.5rem;
+    padding: 7px 18px;
+    border-radius: 5px;
+    border: none;
+    background-color: #fd4444;
+    color: white;
+    cursor: pointer;
+}
+
+/* MESSAGE BOX PROMPT */
+.message {
+    position: absolute;
+    background: #ffffff;
+    color: #3b3b3b;
+    width: 600px;
+    padding: 2% 3%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px #333;
+    text-align: justify;
+    display: none;
+    transition: 2s ease in;
+}
+
+.message span{
+    font-size: 1.3rem;
+}
+
+
+@media (max-width: 700px) {
+    .card {
+        position: relative;
+        width: 90%;
+    }
+    
+    .card img {
+        margin: 0 auto;
+        width: 100%; 
+    }
+    .message {
+        position: absolute;
+        background: #ffffff;
+        color: #3b3b3b;
+        width: 400px;
+        padding: 2% 3%;
+        border-radius: 20px;
+        box-shadow: 5px 5px 15px #333;
+        text-align: justify;
+        display: none;
+        transition: 2s ease in;
+    }
+}
