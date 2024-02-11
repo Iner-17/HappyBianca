@@ -101,6 +101,16 @@
         margin: 0 auto;
         width: 100%; 
     }
+
+    .card-message h2 {
+        font-family: 'Rubik Doodle Shadow', system-ui;
+        text-align: center;
+        margin-top: 5vh;
+        font-size: 4rem;
+        padding: 0 10%;
+    }
+
+
     .message {
         position: absolute;
         background: #ffffff;
@@ -112,5 +122,11 @@
         text-align: justify;
         display: none;
         transition: 2s ease in;
+    }
+
+    .card-message img {
+        display: block;
+        margin: 0 auto;
+        width: 90%;
     }
 }
