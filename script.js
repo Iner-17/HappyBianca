@@ -40,6 +40,7 @@ const openMessage = () => {
                 alert("Correct")
             } else {
                 alert("Eeeeenggkkk!")
+                i += 10;
             }
         }
         if (score == 6) {
